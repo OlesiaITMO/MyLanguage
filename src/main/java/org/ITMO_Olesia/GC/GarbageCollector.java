@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-public class MemoryManager {
+public class GarbageCollector {
     private final Map<String, ObjectEntry> globalMemory = new HashMap<>();
     private final Stack<Map<String, ObjectEntry>> callStack = new Stack<>();
     private Object returnValue;
@@ -162,7 +162,7 @@ public class MemoryManager {
     }
 
     public static void main(String[] args) {
-        MemoryManager memoryManager = new MemoryManager();
+        GarbageCollector memoryManager = new GarbageCollector();
 
         // Example allocation
         memoryManager.allocate("var1", new Object());

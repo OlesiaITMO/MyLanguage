@@ -13,6 +13,11 @@ public class Lexer {
                 if (word.equals("set")) {
                     temp_list.add(new Token(LType.SET, word));
                 }
+                else if (word.equals("give")) {
+                    temp_list.add(new Token(LType.RETURN_WORD, "give")); // новое слово возврата
+                } else if (word.equals("loop")) {
+                    temp_list.add(new Token(LType.LOOP_WORD, "loop")); // новое слово для цикла
+                }
                 else if (word.equals("if")) {
                     temp_list.add(new Token(LType.IF, word));
                 }

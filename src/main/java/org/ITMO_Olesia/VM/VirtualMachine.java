@@ -1,6 +1,6 @@
 package org.ITMO_Olesia.VM;
 
-import org.ITMO_Olesia.GC.MemoryManager;
+import org.ITMO_Olesia.GC.GarbageCollector;
 import org.ITMO_Olesia.LangInnerStructure.Action;
 import org.ITMO_Olesia.LangInnerStructure.Token;
 
@@ -8,11 +8,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class VirtualMachine {
-    private final MemoryManager memoryManager;
+    private final GarbageCollector memoryManager;
     private final Map<String, Object> variables;
 
     public VirtualMachine() {
-        memoryManager = new MemoryManager();
+        memoryManager = new GarbageCollector();
         variables = new HashMap<>();
     }
 

@@ -6,7 +6,7 @@ public enum LType {
     NUMBER("int value"), BOOL("bool value"), ARRAY("array value"), NAME("name"),
     FACTORIAL("!"), PLUS("+"), MINUS("-"), MULTIP("*"), DIVIDE("/"), RESIDUE("%"), ENDLINE(";"), PRINT_WORD("\""),
     MORE(">"), LESS("<"), SAME("=="),
-    R_BACKET_OPEN("("), R_BACKET_CLOSE(")"), S_BACKET_OPEN("["), S_BACKET_CLOSE("]"), F_BACKET_OPEN("{"), F_BACKET_CLOSE("}");
+    R_BACKET_OPEN("("), R_BACKET_CLOSE(")"), S_BACKET_OPEN("["), S_BACKET_CLOSE("]"), F_BACKET_OPEN("{"), F_BACKET_CLOSE("}"), RETURN_WORD("give"), LOOP_WORD("loop");
 
     private LType(String fullName) {
         this.fullName = fullName;
